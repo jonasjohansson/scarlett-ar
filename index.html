@@ -1,28 +1,12 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <script
-      type="module"
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"
-    ></script>
-    <style>
-      body {
-        margin: 0;
-      }
-      model-viewer {
-        width: 100%;
-        height: 100%;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Camera Kit Web App</title>
   </head>
   <body>
-    <model-viewer
-      src="https://jonasjohansson.github.io/scarlett-ar/portal.glb"
-      ar
-      ar-modes="webxr scene-viewer quick-look fallback"
-      ar-scale="auto"
-      camera-controls
-      skybox-image="https://modelviewer.dev/shared-assets/environments/aircraft_workshop_01_1k.hdr"
-      ios-src="https://jonasjohansson.github.io/scarlett-ar/portal.usdz"
-    ></model-viewer>
+    <canvas id="canvas"></canvas>
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

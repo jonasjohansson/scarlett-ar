@@ -1,1 +1,1 @@
-# scarlett-ar
+# camera_kit_demo
